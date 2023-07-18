@@ -39,15 +39,16 @@ font-weight: 500;
 
     display: grid;
     grid-template-rows: repeat(1,1fr);
+    width: ;
     
 }
 
 .banner-img{
- /*   width: max-content;*/
+ padding: 0;
 }
 
 .banner-button{
-   
+   padding-left: 150px;
 }
 header{
     margin: 0;
@@ -63,6 +64,28 @@ body{
       justify-content: space-evenly;
     
     }
+.popular{
+
+    grid-template-columns: repeat(1,1fr);
+}
 
 
-}bi
+.featured-container{
+    flex-direction:column-reverse;
+}
+.featured-column-1{
+    margin: auto;
+
+}
+
+.featured-column-2{
+margin-bottom: 20px;
+}
+
+.featured-h2{
+    color: #0A0826;
+text-align: center;
+font-size: 24px;
+font-weight: 700;
+}
+}
