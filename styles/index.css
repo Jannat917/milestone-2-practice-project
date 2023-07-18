@@ -1,0 +1,228 @@
+
+/*Font Style*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{font-family: 'Poppins', sans-serif;}
+
+/* Nav styles*/
+
+header{
+    margin: 4.8rem 7.8rem;
+  
+    }
+
+.nav-container{
+    margin-bottom: 3.13rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul{
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    color: #3A3A3A;
+font-size: 1rem;
+font-weight: 600;
+
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+.nav-title{
+    color: #3A3A3A;
+font-size: 1.5rem;
+font-weight: 700;
+width: 15.2rem;
+height: 3.2rem;
+
+}
+
+/*Banner Styles*/
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-title{
+    color: #3A3A3A;
+font-size: 3.25rem;
+font-weight: 700;
+line-height: 4.375rem;
+width: 36.37rem;
+height: 8.31rem;
+margin-bottom: 1rem;
+}
+
+.banner-p{
+    color: #3A3A3A;
+font-size: 1rem;
+font-weight: 600;
+width: 31.56rem;
+height: 3.8rem;
+
+}
+
+.banner-btn{
+
+    color: #FFF;
+font-family: Poppins;
+font-size: 1rem;
+font-weight: 700;
+border-radius: 2.56rem;
+background: #E02C6D;
+padding: 1.5rem;
+display: inline-flex;
+padding: 0.625rem 1.5rem;
+align-items: flex-start;
+gap: .5rem;
+border: none;
+}
+
+.banner-column-1{
+    width: 90rem;
+
+}
+
+.banner-column-2{
+    width: 90rem;
+   
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+
+.banner-img{
+    width: 27.5rem;
+height: 25.875rem;
+padding: 2rem 0rem 2rem 2rem;
+
+}
+
+/* SPONSORS */
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+  padding: 30px;
+  gap: 30px;
+
+}
+
+
+/*Popular Styles*/
+
+.popular{ 
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   row-gap: 20px;
+   column-gap: 20px;
+   justify-content: center;
+}
+
+.popular-item{
+    
+    width: 329px;
+height: 476px;
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10px;
+}
+
+/*Responsive for Mole*/
+
+@media screen and (max-width:576px){
+    nav ul {
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+
+
+    .nav-title{
+
+        width: 0;
+    }
+    .banner{
+        flex-direction: column-reverse;
+      
+        
+    }
+.banner-title{
+    width: 450px;
+height: 50px;
+color: #3A3A3A;
+text-align: center;
+font-size: 25px;
+
+
+}
+.banner-p{
+    text-align: center;
+width: 400px;
+font-size: 12px;
+font-weight: 500; 
+
+}
+
+.banner-column-2{
+    width: fit-content;
+   /* font-size: smaller;*/
+}
+
+.banner-column-1{
+
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+}
+
+.banner-img{
+ /*   width: max-content;*/
+}
+
+.banner-button{
+   
+}
+header{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+    .sponsors{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 10px;
+      justify-content: space-evenly;
+    
+    }
+
+
+
+.popular{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
